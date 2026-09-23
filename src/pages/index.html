@@ -1,0 +1,257 @@
+<!-- ================= Hero ================= -->
+<section class="bg-brand-800 hex-texture text-white">
+  <div class="container-x pb-14 pt-10 text-center sm:pb-20 sm:pt-14">
+    <p class="text-label font-bold text-accent-500">سامانهٔ تأمین و فروش قطعات یدکی خودرو</p>
+    <h1 class="mx-auto mt-3 max-w-2xl text-display">قطعه‌ات رو می‌رسونیم</h1>
+    <p class="mx-auto mt-4 max-w-xl text-body text-white/80">
+      موجودی واقعی، قیمت شفاف و زمان تحویل دقیق — از انبار تهران، برای تعمیرکاران،
+      فروشندگان قطعه و رانندگانی که قطعهٔ درست را به‌موقع می‌خواهند.
+    </p>
+
+    <div class="mx-auto mt-8 max-w-2xl text-right">
+      {{> searchbox}}
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-2">
+        <span class="text-xs text-white/60">جست‌وجوی سریع:</span>
+        <a class="chip !border-white/25 !bg-white/5 !text-white/85 hover:!border-white hover:!text-white" href="catalog.html?v=پژو ۲۰۶">پژو ۲۰۶</a>
+        <a class="chip !border-white/25 !bg-white/5 !text-white/85 hover:!border-white hover:!text-white" href="catalog.html?v=پژو ۴۰۵">پژو ۴۰۵</a>
+        <a class="chip !border-white/25 !bg-white/5 !text-white/85 hover:!border-white hover:!text-white" href="catalog.html?v=سمند">سمند</a>
+        <a class="chip !border-white/25 !bg-white/5 !text-white/85 hover:!border-white hover:!text-white" href="catalog.html?v=پراید">پراید</a>
+        <a class="chip !border-white/25 !bg-white/5 !text-white/85 hover:!border-white hover:!text-white" href="catalog.html?v=دنا">دنا</a>
+        <a class="chip !border-accent-600 !bg-accent-600 !text-white hover:!bg-accent-700" href="b2b.html">عمده‌فروشی</a>
+      </div>
+    </div>
+
+    <ul class="mx-auto mt-10 grid max-w-3xl gap-3 text-sm text-white/85 sm:grid-cols-3">
+      <li class="flex items-center justify-center gap-2 rounded-lg bg-white/5 px-4 py-3">
+        <span class="text-accent-500">{{icon:truck}}</span> ارسال امروز تهران
+      </li>
+      <li class="flex items-center justify-center gap-2 rounded-lg bg-white/5 px-4 py-3">
+        <span class="text-accent-500">{{icon:shield-check}}</span> گارانتی اصالت کالا
+      </li>
+      <li class="flex items-center justify-center gap-2 rounded-lg bg-white/5 px-4 py-3">
+        <span class="text-accent-500">{{icon:check-circle}}</span> قیمت و موجودی شفاف
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= دسته‌بندی‌ها ================= -->
+<section class="container-x py-14" aria-labelledby="cats-h">
+  <div class="flex items-end justify-between gap-4">
+    <div>
+      <p class="text-label font-bold text-accent-600">کاتالوگ قطعات</p>
+      <h2 id="cats-h" class="mt-1 text-h2">از واشر سرسیلندر تا دستگیرهٔ کابین</h2>
+    </div>
+    <a href="catalog.html" class="btn-outline btn-sm hidden sm:inline-flex">
+      همهٔ قطعات {{icon:arrow-forward}}
+    </a>
+  </div>
+  <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+    <a class="card card-hover flex items-center gap-3 p-4" href="catalog.html?cat=filter">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:filter}}</span>
+      <span class="font-bold">فیلتر</span>
+    </a>
+    <a class="card card-hover flex items-center gap-3 p-4" href="catalog.html?cat=motor-consumable">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:wrench}}</span>
+      <span class="font-bold">مصرفی موتور</span>
+    </a>
+    <a class="card card-hover flex items-center gap-3 p-4" href="catalog.html?cat=fluids">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:box}}</span>
+      <span class="font-bold">روغن و مایعات</span>
+    </a>
+    <a class="card card-hover flex items-center gap-3 p-4" href="catalog.html?cat=brakes">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:shield-check}}</span>
+      <span class="font-bold">ترمز</span>
+    </a>
+    <a class="card card-hover flex items-center gap-3 p-4" href="catalog.html?cat=electrical">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:info}}</span>
+      <span class="font-bold">برقی سبک</span>
+    </a>
+    <a class="card card-hover flex items-center gap-3 p-4" href="catalog.html?cat=cabin">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:nut}}</span>
+      <span class="font-bold">کابین و جانبی</span>
+    </a>
+    <a class="card card-hover flex items-center gap-3 p-4" href="catalog.html?cat=suspension">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:car}}</span>
+      <span class="font-bold">جلوبندی</span>
+    </a>
+    <a class="card card-hover flex items-center gap-3 p-4" href="catalog.html?cat=body">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:warehouse}}</span>
+      <span class="font-bold">بدنه</span>
+    </a>
+  </div>
+  <div class="mt-6 sm:hidden">
+    <a href="catalog.html" class="btn-outline w-full">همهٔ قطعات {{icon:arrow-forward}}</a>
+  </div>
+</section>
+
+<!-- ================= چطور کار می‌کند ================= -->
+<section class="border-y border-line bg-white" aria-labelledby="how-h">
+  <div class="container-x py-14">
+    <h2 id="how-h" class="text-center text-h2">قطعه رو پیدا کن، سفارش بده</h2>
+    <div class="mt-8 grid gap-6 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:items-stretch">
+      <div class="card p-6 text-center">
+        <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-50 text-brand-800">{{icon:search}}</span>
+        <h3 class="mt-4 text-h3">۱. قطعه رو پیدا کن</h3>
+        <p class="mt-2 text-sm leading-7 text-steel">
+          مدل ماشین یا شمارهٔ فنی را جست‌وجو کن؛ فقط قطعه‌هایی که واقعاً به ماشینت می‌خورند را می‌بینی.
+        </p>
+      </div>
+      <div class="arrow-sep rotate-0 md:rotate-0 md:self-center" aria-hidden="true">{{icon:arrow-forward}}</div>
+      <div class="card p-6 text-center">
+        <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-50 text-brand-800">{{icon:send-plane}}</span>
+        <h3 class="mt-4 text-h3">۲. درخواست بده</h3>
+        <p class="mt-2 text-sm leading-7 text-steel">
+          موجودی و قیمت واقعی است؛ درخواستت را ثبت کن، بقیه‌اش با ما.
+        </p>
+      </div>
+      <div class="arrow-sep md:self-center" aria-hidden="true">{{icon:arrow-forward}}</div>
+      <div class="card p-6 text-center">
+        <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-50 text-brand-800">{{icon:truck}}</span>
+        <h3 class="mt-4 text-h3">۳. تحویل بگیر</h3>
+        <p class="mt-2 text-sm leading-7 text-steel">
+          تهران فردا، شهرستان ۲ تا ۴ روز کاری — با بسته‌بندی مطمئن و کد پیگیری.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= قطعه‌های پرتقاضا ================= -->
+<section class="container-x py-14" aria-labelledby="featured-h">
+  <div class="flex items-end justify-between gap-4">
+    <div>
+      <p class="text-label font-bold text-accent-600">موجود در انبار تهران</p>
+      <h2 id="featured-h" class="mt-1 text-h2">قطعه‌های پرتقاضا</h2>
+    </div>
+    <a href="catalog.html?avail=1" class="btn-outline btn-sm hidden sm:inline-flex">
+      فقط موجودها {{icon:arrow-forward}}
+    </a>
+  </div>
+  <div id="featured-grid" class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <!-- با اسکریپت از دادهٔ کاتالوگ پر می‌شود -->
+  </div>
+  <noscript>
+    <p class="mt-6 text-sm text-steel">برای دیدن فهرست قطعات، جاوااسکریپت را فعال کنید یا به <a class="font-bold text-brand-800 underline" href="catalog.html">صفحهٔ کاتالوگ</a> بروید.</p>
+  </noscript>
+</section>
+
+<!-- ================= بنر عمده‌فروشی ================= -->
+<section class="bg-brand-800 hex-texture text-white" aria-labelledby="b2b-h">
+  <div class="container-x grid items-center gap-8 py-14 lg:grid-cols-2">
+    <div>
+      <p class="text-label font-bold text-accent-500">قطعه‌رسان بیزینس</p>
+      <h2 id="b2b-h" class="mt-2 text-h1">تأمین مطمئن، تحویل به‌موقع</h2>
+      <p class="mt-4 max-w-lg text-body text-white/80">
+        برای تعمیرگاه‌ها، فروشگاه‌های قطعه و ناوگان‌ها: پنل عمده با قیمت پلکانی،
+        تسویهٔ منعطف، فاکتور رسمی و گزارش مصرف دوره‌ای.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="b2b.html" class="btn-accent">آشنایی با پنل عمده</a>
+        <a href="part-request.html" class="btn-outline-dark">درخواست قطعه</a>
+      </div>
+    </div>
+    <ul class="grid gap-3 sm:grid-cols-2">
+      <li class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-4">
+        <span class="text-accent-500">{{icon:chart}}</span>
+        <span class="text-sm">قیمت پلکانی بر اساس حجم خرید</span>
+      </li>
+      <li class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-4">
+        <span class="text-accent-500">{{icon:invoice}}</span>
+        <span class="text-sm">فاکتور رسمی و قرارداد تأمین</span>
+      </li>
+      <li class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-4">
+        <span class="text-accent-500">{{icon:clock}}</span>
+        <span class="text-sm">تسویهٔ منعطف برای همکاران</span>
+      </li>
+      <li class="flex items-center gap-3 rounded-xl bg-white/5 px-4 py-4">
+        <span class="text-accent-500">{{icon:users}}</span>
+        <span class="text-sm">پشتیبانی اختصاصی عمده</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= ارزش‌های بنیادین ================= -->
+<section class="container-x py-14" aria-labelledby="values-h">
+  <h2 id="values-h" class="text-center text-h2">قول ما، همین چهار کلمه است</h2>
+  <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="card p-6">
+      <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:shield-check}}</span>
+      <h3 class="mt-4 text-h3">اصالت</h3>
+      <p class="mt-2 text-sm leading-7 text-steel">هر قطعه با منشأ مشخص. اگر اصلی نیست، می‌گوییم اصلی نیست.</p>
+    </div>
+    <div class="card p-6">
+      <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:truck}}</span>
+      <h3 class="mt-4 text-h3">رساندن</h3>
+      <p class="mt-2 text-sm leading-7 text-steel">قول تحویل، قول است. زمان‌بندی واقعی می‌دهیم، نه تبلیغاتی.</p>
+    </div>
+    <div class="card p-6">
+      <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:box}}</span>
+      <h3 class="mt-4 text-h3">پوشش کامل</h3>
+      <p class="mt-2 text-sm leading-7 text-steel">از واشر سرسیلندر تا دستگیرهٔ داخل کابین؛ مشتری جای دیگری نرود.</p>
+    </div>
+    <div class="card p-6">
+      <span class="flex h-11 w-11 items-center justify-center rounded-lg bg-brand-50 text-brand-800">{{icon:info}}</span>
+      <h3 class="mt-4 text-h3">شفافیت</h3>
+      <p class="mt-2 text-sm leading-7 text-steel">قیمت، موجودی و وضعیت سفارش — بدون ابهام و بدون «تماس بگیرید».</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= قطعهٔ ناموجود ================= -->
+<section class="border-y border-line bg-white">
+  <div class="container-x flex flex-col items-center gap-6 py-12 text-center md:flex-row md:justify-between md:text-right">
+    <div class="max-w-xl">
+      <h2 class="text-h2">قطعه‌ای که می‌خواهی را پیدا نکردی؟</h2>
+      <p class="mt-2 text-body text-steel">
+        مشخصاتش را بفرست؛ یا موجود می‌کنیم و خبرت می‌دهیم، یا برند جایگزین با همان کیفیت پیشنهاد می‌دهیم.
+      </p>
+    </div>
+    <a href="part-request.html" class="btn-accent btn-lg shrink-0">
+      {{icon:hex-arrow}} درخواست قطعه
+    </a>
+  </div>
+</section>
+
+<!-- ================= سوالات متداول ================= -->
+<section class="container-x py-14" aria-labelledby="faq-h">
+  <div class="mx-auto max-w-3xl">
+    <h2 id="faq-h" class="text-center text-h2">سوالات پرتکرار</h2>
+    <div class="mt-6 grid gap-3">
+      <details class="card group p-5">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-3 text-h3">
+          جنس قطعات اصل است؟
+          <span class="text-steel transition-transform group-open:rotate-180">{{icon:chevron-down}}</span>
+        </summary>
+        <p class="mt-3 text-sm leading-7 text-steel">
+          هر قطعه با منشأ مشخص ثبت می‌شود: اصلی کارخانه یا شرکتی درجهٔ یک. اگر قطعه‌ای اصلی نباشد،
+          همین را صریح می‌گوییم — و همهٔ قطعات گارانتی اصالت دارند.
+        </p>
+      </details>
+      <details class="card group p-5">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-3 text-h3">
+          سفارش چقدر طول می‌کشد تا برسد؟
+          <span class="text-steel transition-transform group-open:rotate-180">{{icon:chevron-down}}</span>
+        </summary>
+        <p class="mt-3 text-sm leading-7 text-steel">
+          سفارش‌های ثبت‌شده تا ساعت ۱۴ همان روز از انبار تهران ارسال می‌شوند؛ تحویل در تهران فردا
+          و در شهرستان‌ها معمولاً ۲ تا ۴ روز کاری است.
+        </p>
+      </details>
+      <details class="card group p-5">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-3 text-h3">
+          اگر قطعه‌ای موجود نباشد چه؟
+          <span class="text-steel transition-transform group-open:rotate-180">{{icon:chevron-down}}</span>
+        </summary>
+        <p class="mt-3 text-sm leading-7 text-steel">
+          وضعیت واقعی را می‌بینید — «ناموجود» یعنی الان در انبار نیست. می‌توانید درخواست بدهید تا
+          به‌محض رسیدن محموله خبرتان کنیم؛ در موارد زیاد، برند جایگزین با همان کیفیت موجود است.
+        </p>
+      </details>
+    </div>
+    <p class="mt-6 text-center">
+      <a href="faq.html" class="font-bold text-brand-800 hover:text-brand-700">همهٔ سوالات متداول {{icon:arrow-forward}}</a>
+    </p>
+  </div>
+</section>

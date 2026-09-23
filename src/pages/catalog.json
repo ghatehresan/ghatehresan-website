@@ -1,0 +1,19 @@
+{
+  "title": "کاتالوگ قطعات یدکی",
+  "description": "جست‌وجوی قطعات یدکی خودرو بر اساس نام، شمارهٔ فنی یا مدل خودرو؛ با موجودی و قیمت واقعی. پژو، سمند، دنا، پراید، تیبا و سایر خودروهای بازار ایران.",
+  "path": "/catalog.html",
+  "priority": 0.9,
+  "changefreq": "weekly",
+  "nav_catalog": true,
+  "header_search": true,
+  "search_class": "",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "کاتالوگ قطعات یدکی قطعه‌رسان",
+      "url": "https://ghatehresan.ir/catalog.html",
+      "inLanguage": "fa"
+    }
+  ]
+}

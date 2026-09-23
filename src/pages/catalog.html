@@ -1,0 +1,72 @@
+<div class="container-x py-10">
+  <nav class="text-xs text-steel" aria-label="مسیر صفحه">
+    <a class="hover:text-brand-800" href="index.html">خانه</a>
+    <span aria-hidden="true"> ← </span>
+    <span class="text-ink">کاتالوگ قطعات</span>
+  </nav>
+
+  <div class="mt-4 flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <h1 class="text-h1">کاتالوگ قطعات</h1>
+      <p class="mt-2 max-w-2xl text-body text-steel">
+        قطعات موتوری، بدنه، برقی، کابین و مصرفی برای خودروهای رایج بازار ایران —
+        با موجودی و قیمت واقعی.
+      </p>
+    </div>
+    <p id="catalog-count" class="text-label font-bold text-brand-800" aria-live="polite"></p>
+  </div>
+
+  <!-- فیلترها -->
+  <form class="card mt-6 grid gap-4 p-5 sm:grid-cols-2 lg:grid-cols-[1fr_200px_200px_auto_auto]" role="search" onsubmit="return false;">
+    <div>
+      <label class="label" for="cat-q">جست‌وجو</label>
+      <div class="relative">
+        <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-steel">{{icon:search}}</span>
+        <input id="cat-q" type="search" class="field pr-10" placeholder="نام قطعه، برند یا شمارهٔ فنی…">
+      </div>
+    </div>
+    <div>
+      <label class="label" for="cat-category">دسته‌بندی</label>
+      <select id="cat-category" class="field"></select>
+    </div>
+    <div>
+      <label class="label" for="cat-vehicle">خودرو</label>
+      <select id="cat-vehicle" class="field"></select>
+    </div>
+    <div class="flex items-end pb-3">
+      <label class="flex cursor-pointer items-center gap-2 text-sm font-medium">
+        <input id="cat-avail" type="checkbox" class="h-4 w-4 accent-[#0E2A47]">
+        فقط موجودها
+      </label>
+    </div>
+    <div class="flex items-end pb-1">
+      <button id="cat-reset" type="button" class="btn-outline btn-sm w-full">پاک کردن فیلترها</button>
+    </div>
+  </form>
+
+  <!-- نتایج -->
+  <div id="catalog-grid" class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+
+  <div id="catalog-empty" class="mt-6 hidden">
+    <div class="card mx-auto max-w-xl p-10 text-center">
+      <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-50 text-brand-800">{{icon:nut}}</span>
+      <h2 class="mt-4 text-h2">قطعه‌ای پیدا نشد</h2>
+      <p class="mt-2 text-body text-steel">
+        با این فیلترها چیزی در کاتالوگ نیست.<span id="empty-q"></span>
+        اگر قطعهٔ خاصی لازم دارید، درخواست بدهید — موجود می‌کنیم یا جایگزین مناسب پیشنهاد می‌دهیم.
+      </p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a class="btn-accent" href="part-request.html">درخواست قطعه</a>
+        <button type="button" class="btn-outline" onclick="document.getElementById('cat-reset').click()">حذف فیلترها</button>
+      </div>
+    </div>
+  </div>
+
+  <noscript>
+    <p class="mt-6 rounded-xl border border-warn/40 bg-warn-soft px-5 py-4 text-sm text-[#8a5c00]">
+      برای جست‌وجو و فیلتر کاتالوگ، جاوااسکریپت لازم است.
+    </p>
+  </noscript>
+</div>
+
+<div id="catalog-root" hidden></div>

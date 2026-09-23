@@ -1,0 +1,9 @@
+{
+  "title": "ارسال و تحویل",
+  "description": "زمان‌بندی واقعی ارسال قطعات قطعه‌رسان: سفارش تا ساعت ۱۴ همان روز از انبار تهران ارسال می‌شود؛ تهران فردا، شهرستان ۲ تا ۴ روز کاری.",
+  "path": "/shipping.html",
+  "priority": 0.5,
+  "changefreq": "monthly",
+  "header_search": true,
+  "search_class": ""
+}

@@ -1,0 +1,16 @@
+<form action="catalog.html" method="get" role="search" class="gr-search {{search_class}}">
+  <div class="relative flex items-stretch">
+    <span class="gr-search-icon pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-steel">
+      {{icon:search}}
+    </span>
+    <label for="gr-search-input" class="sr-only">جست‌وجوی قطعه بر اساس نام، مدل خودرو یا شمارهٔ فنی</label>
+    <input id="gr-search-input" name="q" type="search" autocomplete="off"
+           placeholder="مدل ماشین یا شمارهٔ فنی قطعه…"
+           class="field gr-search-input pr-12"
+           role="combobox" aria-expanded="false" aria-controls="gr-search-list"
+           aria-autocomplete="list" enterkeyhint="search">
+    <button type="submit" class="btn-accent gr-search-btn">جست‌وجو</button>
+  </div>
+  <ul id="gr-search-list" role="listbox" aria-label="پیشنهادهای جست‌وجو"
+      class="gr-search-list card shadow-pop hidden"></ul>
+</form>

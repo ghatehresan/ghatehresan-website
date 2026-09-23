@@ -1,0 +1,35 @@
+{
+  "isHome": true,
+  "title": "قطعه‌رسان",
+  "description": "سامانهٔ تأمین و فروش قطعات یدکی خودرو؛ موجودی واقعی، قیمت شفاف و تحویل به‌موقع از انبار تهران. قطعه‌ات رو می‌رسونیم.",
+  "path": "/index.html",
+  "priority": 1.0,
+  "changefreq": "weekly",
+  "nav_home": true,
+  "search_class": "gr-search--big",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "قطعه‌رسان",
+      "alternateName": "GhatehResan",
+      "slogan": "قطعه‌ات رو می‌رسونیم",
+      "url": "https://ghatehresan.ir/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "قطعه‌رسان",
+      "url": "https://ghatehresan.ir/",
+      "inLanguage": "fa",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://ghatehresan.ir/catalog.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}

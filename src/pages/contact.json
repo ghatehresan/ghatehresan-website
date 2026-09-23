@@ -1,0 +1,10 @@
+{
+  "title": "تماس با ما",
+  "description": "راه‌های ارتباط با قطعه‌رسان: سوال دربارهٔ قطعه، پیگیری سفارش، همکاری عمده و شرکتی. شنبه تا پنج‌شنبه، ۹ تا ۱۸ پاسخ‌گو هستیم.",
+  "path": "/contact.html",
+  "priority": 0.7,
+  "changefreq": "monthly",
+  "nav_contact": true,
+  "header_search": true,
+  "search_class": ""
+}

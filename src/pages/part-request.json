@@ -1,0 +1,19 @@
+{
+  "title": "درخواست قطعهٔ یدکی",
+  "description": "قطعهٔ مورد نظرتان را در کاتالوگ پیدا نکردید؟ مشخصات آن را ثبت کنید؛ قطعه‌رسان یا موجود می‌کند یا جایگزین با همان کیفیت پیشنهاد می‌دهد.",
+  "path": "/part-request.html",
+  "priority": 0.8,
+  "changefreq": "monthly",
+  "nav_request": true,
+  "header_search": true,
+  "search_class": "",
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "درخواست قطعه — قطعه‌رسان",
+      "url": "https://ghatehresan.ir/part-request.html",
+      "inLanguage": "fa"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "صفحه پیدا نشد",
+  "description": "صفحهٔ درخواستی در سایت قطعه‌رسان وجود ندارد؛ از جست‌وجوی قطعات یا کاتالوگ استفاده کنید.",
+  "path": "/404.html",
+  "priority": 0.1,
+  "noindex": true,
+  "search_class": "gr-search--big"
+}

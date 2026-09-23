@@ -1,0 +1,10 @@
+{
+  "title": "جزئیات قطعه",
+  "description": "مشخصات کامل قطعهٔ یدکی: شمارهٔ فنی، برند، کیفیت، خودروهای سازگار، قیمت و وضعیت موجودی واقعی در قطعه‌رسان.",
+  "path": "/product.html",
+  "priority": 0.6,
+  "changefreq": "weekly",
+  "nav_catalog": true,
+  "header_search": true,
+  "search_class": ""
+}

@@ -1,0 +1,108 @@
+<div class="container-x py-10">
+  <nav class="text-xs text-steel" aria-label="مسیر صفحه">
+    <a class="hover:text-brand-800" href="index.html">خانه</a>
+    <span aria-hidden="true"> ← </span>
+    <span class="text-ink">تماس با ما</span>
+  </nav>
+
+  <div class="mt-4 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+    <div>
+      <h1 class="text-h1">تماس با قطعه‌رسان</h1>
+      <p class="mt-2 max-w-2xl text-body text-steel">
+        دربارهٔ یک قطعه، سفارش یا همکاری عمده سوال دارید؟ پیام بدهید؛ خودمان جواب می‌دهیم.
+      </p>
+
+      <div id="form-contact-banner" class="mt-5 hidden"></div>
+
+      <form id="form-contact" class="card mt-5 grid gap-5 p-6 sm:p-8" novalidate>
+        <input type="text" name="hp" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label class="label" for="ct-name">نام و نام خانوادگی *</label>
+            <input id="ct-name" name="name" type="text" class="field" required autocomplete="name"
+                   aria-describedby="ct-err-name">
+            <p id="ct-err-name" class="mt-1 hidden text-xs font-bold text-bad"></p>
+          </div>
+          <div>
+            <label class="label" for="ct-phone">شمارهٔ موبایل *</label>
+            <input id="ct-phone" name="phone" type="tel" class="field" required autocomplete="tel"
+                   placeholder="۰۹۱۲۳۴۵۶۷۸۹" dir="ltr" aria-describedby="ct-err-phone">
+            <p id="ct-err-phone" class="mt-1 hidden text-xs font-bold text-bad"></p>
+          </div>
+        </div>
+
+        <div>
+          <label class="label" for="ct-subject">موضوع *</label>
+          <select id="ct-subject" name="subject" class="field" required aria-describedby="ct-err-subject">
+            <option value="">انتخاب کنید</option>
+            <option>سوال دربارهٔ یک قطعه</option>
+            <option>پیگیری سفارش</option>
+            <option>همکاری عمده و شرکتی</option>
+            <option>مرجوعی یا مشکل قطعه</option>
+            <option>سایر</option>
+          </select>
+          <p id="ct-err-subject" class="mt-1 hidden text-xs font-bold text-bad"></p>
+        </div>
+
+        <div>
+          <label class="label" for="ct-message">متن پیام *</label>
+          <textarea id="ct-message" name="message" rows="5" class="field" required
+                    placeholder="اگر دربارهٔ قطعهٔ خاصی است، شمارهٔ فنی یا مدل خودرو را هم بنویسید…"
+                    aria-describedby="ct-err-message"></textarea>
+          <p id="ct-err-message" class="mt-1 hidden text-xs font-bold text-bad"></p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4">
+          <button type="submit" class="btn-accent btn-lg">ارسال پیام</button>
+          <p class="text-xs leading-6 text-steel">اطلاعات شما فقط برای پاسخ به همین پیام استفاده می‌شود.</p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="lg:pt-24">
+      <div class="card p-6">
+        <h2 class="text-h3">راه‌های تماس</h2>
+        <ul class="mt-4 grid gap-4 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 shrink-0 text-accent-600">{{icon:phone}}</span>
+            <span>
+              <span class="block font-bold">تلفن</span>
+              <span class="text-steel" data-gr="phone">پس از راه‌اندازی اعلام می‌شود</span>
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 shrink-0 text-accent-600">{{icon:mail}}</span>
+            <span>
+              <span class="block font-bold">ایمیل</span>
+              <span class="text-steel" data-gr="email">پس از راه‌اندازی اعلام می‌شود</span>
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 shrink-0 text-accent-600">{{icon:map-pin}}</span>
+            <span>
+              <span class="block font-bold">انبار و دفتر</span>
+              <span class="text-steel" data-gr="address">انبار تهران — نشانی دقیق پس از راه‌اندازی</span>
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 shrink-0 text-accent-600">{{icon:clock}}</span>
+            <span>
+              <span class="block font-bold">ساعات پاسخ‌گویی</span>
+              <span class="text-steel">شنبه تا پنج‌شنبه · ۹ تا ۱۸</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card mt-5 p-6">
+        <h2 class="text-h3">خرید عمده؟</h2>
+        <p class="mt-3 text-sm leading-7 text-steel">
+          اگر تعمیرگاه، فروشگاه قطعه یا ناوگان هستید، مستقیم از صفحهٔ
+          <a class="font-bold text-brand-800 hover:underline" href="b2b.html">عمده‌فروشی</a> شروع کنید
+          تا سریع‌تر به واحد مربوط وصل شوید.
+        </p>
+      </div>
+    </aside>
+  </div>
+</div>
